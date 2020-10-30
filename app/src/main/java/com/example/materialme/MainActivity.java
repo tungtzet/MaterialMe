@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -84,5 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Notify the adapter of the change
         mAdapter.notifyDataSetChanged();
+    }
+
+    public void resetSports(View view) {
+        initializeData();
     }
 }
